@@ -1,0 +1,77 @@
+/*** 
+
+====================================================================
+Section Title
+====================================================================
+
+***/
+
+.sec-title {
+  position: relative;
+  margin-bottom: 60px;
+  @include media-breakpoint-down(lg) {
+    br {
+      display: none;
+    }
+  }
+  .sub-title {
+    position: relative;
+    display: inline-block;
+    font-size: var(--sec-title-subtitle-font-size);
+    line-height: var(--sec-title-subtitle-line-height);
+    font-weight: var(--sec-title-subtitle-font-weight);
+    font-family: var(--sec-title-subtitle-font-family);
+    color: var(--sec-title-subtitle-color);
+    letter-spacing: 0.2em;
+    top: -5px;
+    margin-bottom: 2px;
+    margin-top: 7px;
+    text-transform: uppercase;
+  }
+  h1 {
+    position: relative;
+    font-size: var(--h1-font-size);
+    font-weight: 900;
+    line-height: 1em;
+    margin-bottom: 0;
+    @include media-breakpoint-down(xl) {
+      font-size: 84px;
+    }
+    @include media-breakpoint-down(lg) {
+      font-size: 72px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 68px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 54px;
+    }
+  }
+
+  h2 {
+    position: relative;
+    font-size: var(--sec-title-font-size);
+    color: var(--sec-title-color);
+    font-family: var(--sec-title-font-family);
+    font-weight: var(--sec-title-font-weight);
+    letter-spacing: -0.01em;
+    margin-bottom: 0;
+    @include media-breakpoint-down(sm) {
+      font-size: 36px;
+    }
+  }
+  .text {
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+
+  &.light {
+    .sub-title,
+    .text,
+    h2,
+    h1 {
+      color: #fff;
+    }
+  }
+}

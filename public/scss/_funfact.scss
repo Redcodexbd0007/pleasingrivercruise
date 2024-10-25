@@ -1,0 +1,174 @@
+/*** 
+
+====================================================================
+    Fun Fact Section
+====================================================================
+
+***/
+
+.fun-fact-section {
+  position: relative;
+  padding: 0;
+}
+
+.counter-block {
+  position: relative;
+  margin-bottom: 50px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 0;
+  }
+  .inner-box {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    @include transition(all 300ms ease);
+    &:hover {
+      .count-box {
+        color: var(--theme-color1);
+      }
+      .counter-title {
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .content-box {
+    position: relative;
+  }
+  .count-box {
+    font-family: var(--title-font);
+    position: relative;
+    font-size: 120px;
+    line-height: 1;
+    color: #e1e1e1;
+    @include transition(all 300ms ease);
+    @include media-breakpoint-down(lg) {
+      font-size: 100px;
+    }
+  }
+
+  .counter-title {
+    color: var(--theme-color-dark);
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    transform: translateY(-60px);
+    @include transition(all 300ms ease);
+    @include media-breakpoint-down(lg) {
+      transform: translateY(-50px);
+    }
+    &:before {
+      background-color: var(--theme-color1);
+      content: '';
+      height: 2px;
+      position: absolute;
+      bottom: 6px;
+      left: 0;
+      width: 100%;
+    }
+    &:after {
+      background-color: var(--theme-color2);
+      content: '';
+      height: 2px;
+      position: absolute;
+      bottom: 6px;
+      left: 0;
+      width: 0;
+      @include transition(all 300ms ease);
+    }
+  }
+}
+
+/*** 
+
+====================================================================
+    Fun Fact Section Two
+====================================================================
+
+***/
+
+.fun-fact-section-two {
+  position: relative;
+  padding: 90px 0 100px;
+  @include media-breakpoint-down(xl) {
+    padding: 130px 0 50px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 0 0 50px;
+  }
+}
+
+.counter-block-two {
+  position: relative;
+  margin-bottom: 0;
+  .inner-box {
+    position: relative;
+    margin-bottom: 0;
+    text-align: center;
+    @include transition(all 300ms ease);
+    &:hover {
+      .count-box {
+        color: var(--theme-color1);
+      }
+      .counter-title {
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .content-box {
+    position: relative;
+  }
+  .count-box {
+    font-family: var(--title-font);
+    position: relative;
+    font-size: 120px;
+    line-height: 1;
+    color: #e1e1e1;
+    @include transition(all 300ms ease);
+    @include media-breakpoint-down(lg) {
+      font-size: 100px;
+    }
+  }
+
+  .counter-title {
+    color: var(--theme-color-dark);
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    transform: translateY(-60px);
+    @include transition(all 300ms ease);
+    @include media-breakpoint-down(lg) {
+      transform: translateY(-50px);
+    }
+    &:before {
+      background-color: var(--theme-color1);
+      content: '';
+      height: 2px;
+      position: absolute;
+      bottom: 6px;
+      left: 0;
+      width: 100%;
+    }
+    &:after {
+      background-color: var(--theme-color2);
+      content: '';
+      height: 2px;
+      position: absolute;
+      bottom: 6px;
+      left: 0;
+      width: 0;
+      @include transition(all 300ms ease);
+    }
+  }
+}

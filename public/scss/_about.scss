@@ -1,0 +1,500 @@
+/*** 
+====================================================================
+    About Section
+====================================================================
+***/
+
+.about-section {
+  position: relative;
+  padding: 0 0 120px;
+  z-index: 2;
+  .sec-title {
+    margin-bottom: 20px;
+    h2 {
+      @include media-breakpoint-down(sm) {
+        font-size: 30px;
+      }
+    }
+  }
+  .content-column {
+    margin-bottom: 0;
+    z-index: 1;
+    .inner-column {
+      background-color: var(--theme-color3);
+      padding: 85px 100px 89px 399px;
+      position: relative;
+      outline: 1px solid var(--theme-color1);
+      outline-offset: -18px;
+      @include media-breakpoint-down(xl) {
+        padding: 85px 100px 89px 290px;
+      }
+      @include media-breakpoint-down(lg) {
+        padding: 85px 100px 89px 100px;
+      }
+      @include media-breakpoint-down(md) {
+        padding: 50px 50px 60px 50px;
+      }
+      @include media-breakpoint-down(sm) {
+        padding: 30px;
+      }
+      .inner {
+        position: relative;
+        z-index: 1;
+        .icon-wheel-1 {
+          position: absolute;
+          top: -28px;
+          left: -242px;
+          animation: fa-spin 70s infinite;
+          z-index: -1;
+          @include media-breakpoint-down(lg) {
+            opacity: 0.1;
+          }
+        }
+        .icon-big-boat-1 {
+          position: absolute;
+          bottom: 1px;
+          right: calc(100% + 105px);
+          z-index: -2;
+          @include media-breakpoint-down(lg) {
+            opacity: 0.1;
+          }
+          @include media-breakpoint-down(lg) {
+            right: -41px;
+            bottom: -60px;
+          }
+          @include media-breakpoint-down(md) {
+            right: 100px;
+            bottom: -60px;
+          }
+        }
+      }
+      .since-box {
+        position: relative;
+        display: inline-block;
+        margin-top: 30px;
+        .inner {
+          display: flex;
+          .since-info {
+            margin-top: 10px;
+          }
+          .image {
+            margin-bottom: 0;
+            margin-right: 30px;
+            @include media-breakpoint-down(sm) {
+              margin-right: 15px;
+            }
+          }
+          .since-title {
+            font-weight: var(--body-font-weight);
+            margin-bottom: 5px;
+          }
+          .since-year {
+            color: #c1c1c1;
+            font-size: 72px;
+            line-height: 1;
+            margin-bottom: 0;
+            @include media-breakpoint-down(md) {
+              font-size: 52px;
+            }
+            @include media-breakpoint-down(sm) {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*** 
+====================================================================
+    About Section Two
+====================================================================
+***/
+
+.about-section-two {
+  position: relative;
+  padding: 0 0 120px;
+  z-index: 2;
+  .icon-big-boat-2 {
+    position: absolute;
+    right: 6px;
+    bottom: 3px;
+    z-index: -1;
+    pointer-events: none;
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+  }
+  .sec-title {
+    margin-bottom: 20px;
+  }
+
+  .outer-box {
+    position: relative;
+    background-color: var(--theme-color3);
+  }
+
+  .content-column {
+    margin-bottom: 0;
+    z-index: 1;
+    .inner-column {
+      padding: 79px 0;
+      position: relative;
+      @include media-breakpoint-down(lg) {
+        padding: 79px 80px 150px;
+      }
+      @include media-breakpoint-down(md) {
+        padding: 79px 30px 150px;
+      }
+      @include media-breakpoint-down(sm) {
+        padding: 79px 30px 100px;
+      }
+      .inner {
+        position: relative;
+        z-index: 1;
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 40px;
+        }
+        .icon-wheel-1 {
+          position: absolute;
+          top: -54px;
+          right: -150px;
+          pointer-events: none;
+          animation: fa-spin 70s infinite;
+          z-index: -1;
+          @include media-breakpoint-down(xl) {
+            top: -66px;
+            right: 13px;
+          }
+          @include media-breakpoint-down(lg) {
+            right: -56px;
+          }
+          @include media-breakpoint-down(md) {
+            right: -14px;
+          }
+        }
+        .list-style {
+          margin-top: 24px;
+          li {
+            color: #000;
+            font-family: Playfair Display;
+            line-height: 38px;
+            i {
+              color: var(--theme-color1);
+              font-size: 21px;
+              margin-right: 4px;
+              position: relative;
+              top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .image-column {
+    .inner-column {
+      .icon-sailboat-line-2 {
+        bottom: 40px;
+        width: 317px;
+        height: 494px;
+        position: absolute;
+        pointer-events: none;
+        left: 108px;
+        background-image: url(../images/icons/icon-sailboat-line-2.png);
+        @include media-breakpoint-down(lg) {
+          left: 0;
+          bottom: 0;
+        }
+      }
+      .image-box {
+        figure {
+          margin: 0;
+        }
+        .image {
+          position: relative;
+          transform: rotate(-6deg);
+          left: -102px;
+          top: 91px;
+          border: 15px solid var(--theme-color-light);
+          max-width: 292px;
+          z-index: 1;
+          box-shadow: 0 0 49px rgba(0, 0, 0, 0.12);
+          @include media-breakpoint-down(xl) {
+            left: 9px;
+          }
+          @include media-breakpoint-down(lg) {
+            left: 160px;
+            top: -115px;
+          }
+          @include media-breakpoint-down(md) {
+            left: 80px;
+          }
+          @include media-breakpoint-down(sm) {
+            left: 30px;
+            top: -70px;
+            max-width: 200px;
+          }
+        }
+        .image-2 {
+          position: absolute;
+          bottom: 150px;
+          border: 10px solid var(--theme-color-light);
+          left: 94px;
+          transform: rotate(6deg);
+          @include media-breakpoint-down(xl) {
+            left: 180px;
+          }
+          @include media-breakpoint-down(lg) {
+            left: 350px;
+            bottom: 165px;
+          }
+          @include media-breakpoint-down(md) {
+            left: 250px;
+          }
+          @include media-breakpoint-down(sm) {
+            left: 181px;
+            bottom: 115px;
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*** 
+====================================================================
+    About Section Three
+====================================================================
+***/
+
+.about-section-three {
+  position: relative;
+  padding: 210px 0 100px;
+  @include media-breakpoint-down(lg) {
+    padding: 80px 0 60px;
+  }
+  .bg {
+    background-size: auto;
+    background-position: left bottom;
+    bottom: -36%;
+    pointer-events: none;
+    top: auto;
+    left: -7%;
+    z-index: -1;
+    &.bg-image2 {
+      background-position: right top;
+      left: auto;
+      right: 0;
+      top: 0;
+    }
+  }
+  .icon-sailboat-line-3 {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    bottom: 200px;
+    z-index: -1;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+  .inner-column {
+    position: relative;
+    .icon-wheel-5 {
+      position: absolute;
+      top: -79px;
+      left: -62px;
+      animation: fa-spin 70s infinite;
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+    .sec-title {
+      position: absolute;
+      right: 33px;
+      top: -101px;
+      @include media-breakpoint-down(lg) {
+        right: auto;
+        top: 0;
+        left: 0;
+        position: relative;
+        margin-bottom: 30px;
+      }
+      h2 {
+        line-height: 54px;
+      }
+    }
+    .image {
+      z-index: -1;
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+        height: 500px;
+        display: none;
+      }
+    }
+  }
+  .content-column-two {
+    .inner-column {
+      .top-box {
+        .text-box {
+          padding: 0 82px 50px 102px;
+          @include media-breakpoint-down(xl) {
+            padding: 0 40px 50px 50px;
+          }
+          @include media-breakpoint-down(lg) {
+            padding: 26px 0 36px 0;
+          }
+          @include media-breakpoint-down(sm) {
+            padding: 20px 0 32px 0;
+          }
+          .text {
+            @include media-breakpoint-down(sm) {
+              font-size: 14px;
+            }
+          }
+          .text-one {
+            margin-bottom: 34px;
+            @include media-breakpoint-down(lg) {
+              margin-bottom: 20px;
+            }
+            @include media-breakpoint-down(lg) {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+      .bottom-box {
+        background-color: var(--theme-color1);
+        position: absolute;
+        margin-left: -191px;
+        padding: 57px 98px;
+        @include media-breakpoint-down(xl) {
+          padding: 57px 50px;
+        }
+        @include media-breakpoint-down(lg) {
+          position: relative;
+          padding: 57px 41px;
+          margin-left: 0;
+        }
+        @include media-breakpoint-down(sm) {
+          padding: 38px 22px 0;
+        }
+        .icon-dots-5 {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+        .about-block {
+          .inner-box {
+            @include media-breakpoint-down(sm) {
+              margin-bottom: 40px;
+            }
+            .image-box {
+              .image {
+                border: 6px solid var(--theme-color-light);
+                overflow: hidden;
+                margin-bottom: 31px;
+                @include media-breakpoint-down(lg) {
+                  width: auto;
+                  height: auto;
+                }
+                @include media-breakpoint-down(sm) {
+                  margin-bottom: 20px;
+                }
+                a {
+                  img {
+                    width: 100%;
+                    @include transition(all 300ms ease);
+                    &:hover {
+                      transform: scale(1.15);
+                    }
+                  }
+                }
+              }
+            }
+            .content-box {
+              .title {
+                color: var(--theme-color-light);
+                &:hover {
+                  color: var(--theme-color2);
+                }
+              }
+              .text {
+                color: #f3efe9;
+                font-size: 14px;
+                line-height: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*** 
+
+====================================================================
+    About Section Four
+====================================================================
+
+***/
+
+.about-section-four {
+  position: relative;
+  padding: 100px 0;
+  z-index: 2;
+  .sec-title {
+    margin-bottom: 20px;
+  }
+
+  .outer-box {
+    position: relative;
+    background-color: var(--theme-color3);
+  }
+
+  .content-column {
+    margin-bottom: 0;
+    z-index: 1;
+    .inner-column {
+      padding: 0;
+      position: relative;
+      .inner {
+        position: relative;
+        z-index: 1;
+        .list-style {
+          margin-top: 24px;
+          li {
+            color: #000;
+            font-family: Playfair Display;
+            line-height: 38px;
+            i {
+              margin-right: 6px;
+              position: relative;
+              top: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .image-column {
+    .inner-column {
+      .image-box {
+        figure {
+          margin: 0;
+        }
+        .image {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
