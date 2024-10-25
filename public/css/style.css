@@ -11852,6 +11852,29 @@ Section Title
   margin-top: -6px;
 }
 
+.book-now-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  background-color: #ff5a5f; /* Eye-catching red or any other standout color */
+  font-weight: bold;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-now-button:hover {
+  background-color: #ff3b3f; /* Slightly darker shade on hover */
+  transform: scale(1.05); /* Small scale effect on hover */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.book-now-button:active {
+  transform: scale(0.98); /* Shrink slightly on click */
+}
+
 /*** 
 ====================================================================
 Page Title

@@ -8,23 +8,27 @@ export default function MobileMenu() {
     key: '',
   });
 
-  const handleClick = (key) => {
-    if (isActive.key === key) {
-      setIsActive({
-        status: false,
-      });
-    } else {
-      setIsActive({
-        status: true,
-        key,
-      });
-    }
+  // const handleClick = (key) => {
+  //   if (isActive.key === key) {
+  //     setIsActive({
+  //       status: false,
+  //     });
+  //   } else {
+  //     setIsActive({
+  //       status: true,
+  //       key,
+  //     });
+  //   }
+  // };
+
+  const handleMenuClose = () => {
+    document.body.classList.remove('mobile-menu-visible');
   };
   return (
     <>
       <ul className="navigation clearfix">
         {/*Keep This Empty / Menu will come through Javascript*/}
-        <li className="current dropdown">
+        {/* <li className="current dropdown">
           <Link href="/">Home</Link>
           <ul style={{ display: `${isActive.key == 1 ? 'block' : 'none'}` }}>
             <li>
@@ -111,9 +115,34 @@ export default function MobileMenu() {
           <div className="dropdown-btn" onClick={() => handleClick(5)}>
             <i className="fa fa-angle-down" />
           </div>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link href="/page-contact">Contact</Link>
+        </li> */}
+        <li onClick={handleMenuClose}>
+          <Link href="/">Home</Link> {/* Home page */}
+        </li>
+        <li onClick={handleMenuClose}>
+          <Link href="/about-us">About Us</Link> {/* About Us page */}
+        </li>
+        <li onClick={handleMenuClose}>
+          <Link href="/foods">Foods</Link> {/* Foods page */}
+        </li>
+        <li onClick={handleMenuClose}>
+          <Link href="/gallery">Gallery</Link> {/* Gallery page */}
+        </li>
+        <li onClick={handleMenuClose}>
+          <Link href="/packages">Packages</Link> {/* Packages page */}
+        </li>
+        <li onClick={handleMenuClose}>
+          <Link href="/contact-us">Contact</Link> {/* Contact page */}
+        </li>
+
+        <li onClick={handleMenuClose}>
+          <Link href="/profile">My Profile</Link> {/* Contact page */}
+        </li>
+        <li onClick={handleMenuClose}>
+          <Link href="/book-now">📅 Book Now</Link>
         </li>
       </ul>
     </>
