@@ -1,35 +1,32 @@
 import Layout from '@/components/layout/Layout';
-import About1 from '@/components/sections/About1';
-import Clients from '@/components/sections/Clients';
-import Crews from '@/components/sections/Crews';
+import About2 from '@/components/sections/About2';
 import Faq from '@/components/sections/Faq';
-import Package from '@/components/sections/Package';
-import Features from '@/components/sections/Features';
+import Features2 from '@/components/sections/Features2';
 import Form from '@/components/sections/Form';
 import Funfact from '@/components/sections/Funfact';
-import Marquee from '@/components/sections/Marquee';
-import News1 from '@/components/sections/News1';
-import Services from '@/components/sections/Services';
+import Package2 from '@/components/sections/Package2';
 import Slider from '@/components/sections/Slider';
-import Testimonial from '@/components/sections/Testimonial';
-import Video from '@/components/sections/Video';
 export default function Home() {
   return (
     <>
       <Layout headerStyle={1} footerStyle={1}>
         <Slider />
-        <Features />
-        <About1 />
-        <Marquee />
-        <Video />
-        <Services />
+        <Features2 />
+        <About2 />
+        <Package2 />
+
+        {/* <Features /> */}
+        {/* <About1 /> */}
+        {/* <Marquee /> */}
+        {/* <Video /> */}
+        {/* <Services /> */}
         <Funfact />
         <Faq />
-        <Package />
-        <Testimonial />
+        {/* <Package /> */}
+        {/* <Testimonial /> */}
         <Form />
-        <Crews />
-        <News1 />
+        {/* <Crews /> */}
+        {/* <News1 /> */}
       </Layout>
     </>
   );
